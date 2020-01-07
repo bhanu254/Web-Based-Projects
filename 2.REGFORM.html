@@ -1,0 +1,45 @@
+<!Doctype html>
+<html>
+<head>
+<title>Online Leave Application</title>
+<script>
+function validate()
+{
+  var mail=document.f1.t3.value;
+  if(mail==" ")
+    alert("please enter a valid mail id");
+}
+</script>
+</head>
+<body style="background-color:yellow;">
+<h1 align="center">Online Leave Application</h1>
+<h2 align="center">REGISTRATION PAGE</h2>
+<form name="f1" action=" " method="GET" onsubmit="return validate()">
+<table align="center" border="0" bgcolor="green" cellspacing="10" cellpadding="5">
+<tr><td>Name:  </td>
+<td><input type="text" name="t1" size="15"></td></tr>
+<tr><td>Phone No: </td>
+<td><input type="text" name="t2" size="15"></td></tr>
+<tr><td> User Type: </td>
+<td><Select name="type">
+  <option value=" ">--Select--</option>
+  <option value="Employee">Employee</option>
+  <option value="Leader">Leader</option>
+ <option value="Manager">Manager</option>
+</select></td></tr>
+<tr><td>Mail id: </td>
+<td><input type="text" name="t3" size="15"></td></tr>
+<tr><td>User id: </td>
+<td><input type="text" name="t5" size="15"></td></tr>
+<tr><td>Password: </td>
+<td><input type="text" name="t6" size="15"></td></tr>
+<tr><td>Retype Password: </td>
+<td><input type="text" name="t7" size="15"></td></tr>
+<tr><td><input type="submit" name="b1" value="Register"></td>
+<td><input type="reset" name="b2" value="Cancel"></td></tr>
+</table>
+</form>
+</body>
+</html>
+
+

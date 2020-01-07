@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>MANAGER LOGIN FORM</title> 
+	<script>
+	function funGo()
+	{
+	var a = document.forms['login'].elements['userid'].value;
+	var b = document.forms['login'].elements['pswrd'].value;
+	 if(a != "abc" && b != "abc") 
+          alert("Error Password or Username");
+	var m = document.forms['login'].elements['mail'].value;
+ 	var n = m.includes("@gmail.com");
+         if(n==false)
+          alert("Enter valid mail");
+	else
+		open(week5.html);
+	}
+	
+	</script>
+	<style>
+	table{
+	font-size:150%;
+	}
+	p{
+	font-size:150%;
+	}
+	</style>
+</head>
+<body style="background-color:blue;">
+<center>
+<h2 style = "color:Red;">LOGIN CREDENTIALS</h2>
+<img src="image6 Manager.jpg" height="300px" width="200px">
+<form name="login">
+<p>Enter your username</p>
+	<input type="Text" name="userid"><br><br>
+<p>Enter your password</p>
+	<input type="password" name="pswrd"><br><br>
+<input type="submit" onclick="funGo()" value="Login"/>
+</form>
+</center>
+</body>
+</html>
